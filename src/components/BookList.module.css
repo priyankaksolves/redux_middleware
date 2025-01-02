@@ -1,0 +1,52 @@
+/* Ensure that the body takes full height of the viewport */
+body, html {
+  margin: 0;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items:first baseline ;      /* Center vertically */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%; /* Set width for the container */
+  max-width: 800px; /* Set a max width for readability */
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto;  /* Center container horizontally */
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #fafafa;
+  width: 100%; /* Ensure the list item takes full width */
+}
+
+strong {
+  font-weight: bold;
+}
+
+.noBooks {
+  color: #666;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
