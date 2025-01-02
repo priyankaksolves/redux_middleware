@@ -1,10 +1,9 @@
-// Example: src/components/BookList.tsx
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from '../redux/store'; // Import RootState to type the selector
+import { BooksState } from '../redux/bookSlice';
 
 const BookList: React.FC = () => {
-  const books = useSelector((state: RootState) => state.books.books); // Select the books from the Redux store
+  const books = useSelector((state: BooksState) => state.books); // Select the books from the Redux store
 
   if (books.length === 0) {
     return <div>No books found</div>;

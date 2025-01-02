@@ -3,5 +3,16 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "es2015"],
+    "jsx": "react-jsx", // "react" if using React version < 17
+    "moduleResolution": "node",
+    "module": "esnext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
 }

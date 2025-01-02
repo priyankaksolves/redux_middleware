@@ -6,7 +6,7 @@ export interface Book {
   id: string;
   title: string;
   authors: string[];
-  description: string;
+  description: string;  
 }
 
 export interface VolumeInfo {
@@ -17,19 +17,19 @@ export interface VolumeInfo {
 }
 
 
-interface BooksState {
+export interface BooksState {
   loading: boolean;
   books: Book[];
   error: string | null;
 }
 
-const initialState: BooksState = {
+export const initialState: BooksState = {
   loading: false,
   books: [],
   error: null,
 };
 
-const booksSlice = createSlice({
+export const booksSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
