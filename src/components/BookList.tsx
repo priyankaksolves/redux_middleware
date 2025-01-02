@@ -1,16 +1,15 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Book } from '../redux/bookSlice';
-import './BookList.module.css';  // Make sure the CSS file is correctly imported
+import './BookList.module.css'; 
 
 const BookList: React.FC = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const books = useSelector((state: any) => {
-    console.log(state); // This is a side effect (it prints the state, but doesn't return anything)
-    return state.books?.books; // This is an expression that doesn’t do anything; it’s not returning anything
+    return state.books?.books;
   });
 
-  if (books.length === 0) {
+  if (books?.length === 0) {
     return <div className="noBooks">No books found</div>; // Display when there are no books
   }
 
