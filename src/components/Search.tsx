@@ -22,7 +22,7 @@ const Search: React.FC = () => {
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search for books"
       />
-      <button onClick={handleSearch}>Search</button>
+      <button onClick={handleSearch}>Search by text</button>
     </div>
   );
 };
